@@ -1,6 +1,3 @@
-const app = require('./config/server');
-const port = process.env.PORT || 3000;
+const initializeServer = require('./config/server');
 
-app.listen(port, () => {
-  console.log(`Server is listening on port: ${port}`);
-});
+initializeServer();

@@ -5,11 +5,19 @@
   "repository": "git@github.com:hacktoberbags/lovebag-backend.git",
   "author": "Lovebag Team",
   "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
+  },
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "pg": "^8.3.3",
     "typeorm": "^0.2.28"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
