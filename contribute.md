@@ -29,7 +29,7 @@ Links (if appropriate)<br/>
 </ol>
 
 **Remember to make a new branch before making the changes. Then by Pull request you want to add it to the master branch.**
-Commands are written in highlighted text`_________`
+Commands are written in highlighted text.
 
 ## Wait for your Pull Request to get merged.
 
