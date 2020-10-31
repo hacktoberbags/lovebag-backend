@@ -1,4 +1,6 @@
 const typeorm = require('typeorm');
+const Bag = require('../src/model/Bag');
+
 const {
   DB_HOST='localhost',
   DB_PORT=5432,
@@ -18,7 +20,7 @@ function connectToDatabase() {
     database: DB_NAME,
     synchronize: true,
     logging: true,
-    entities: [],
+    entities: [Bag],
   });
 }
 
