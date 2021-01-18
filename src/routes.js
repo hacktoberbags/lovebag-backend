@@ -1,8 +1,17 @@
 const express = require('express');
-const BagController = require('./controllers/BagController');
-
 const routes = express.Router();
+const BagController = require('./controller/BagController');
 
-routes.get('/bags', BagController.show);
+routes.get('/', (req,res) => {
+    
+    return res.json({ message: `API for the lovebag store website.
+    https://github.com/hacktoberbags/lovebag-backend` });
+});
+
+routes.get('/bags', )
+
+routes.post('/bags', BagController.store);
+
+
 
 module.exports = routes;

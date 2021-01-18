@@ -2,23 +2,14 @@
   "name": "lovebag-backend",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:hacktoberbags/lovebag-backend.git",
-  "author": "Lovebag Team",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
-    "start:dev": "nodemon index.js"
+    "start": "nodemon src/server.js"
   },
   "dependencies": {
-    "axios": "^0.21.0",
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
+    "axios": "^0.21.1",
     "express": "^4.17.1",
-    "pg": "^8.3.3",
-    "typeorm": "^0.2.28"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.4"
+    "mongoose": "^5.11.12",
+    "nodemon": "^2.0.7"
   }
 }
