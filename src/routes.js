@@ -8,8 +8,7 @@ routes.get('/', (req,res) => {
     https://github.com/hacktoberbags/lovebag-backend` });
 });
 
-routes.get('/bags', )
-
+routes.get('/bags', BagController.index);
 routes.post('/bags', BagController.store);
 
 
