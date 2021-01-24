@@ -18,7 +18,7 @@ const BagSchema = new Schema({
         type: String,
         require: true,
     },
-    available_colors: [],
+    available_colors: [String],
 }, {
     timestamps: true,
 });
