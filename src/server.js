@@ -4,12 +4,15 @@ const cors = require('cors');
 const server = express();
 const routes = require('./routes');
 const mysql = require('mysql');
+const dotenv = require('dotenv');
+
+dotenv.config({ path: 'src/.env' });
 
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'yourpassword',
-    database: 'lovebags_db',
+    host: process.env.DATABASE_HOST,
+    user: process.env.DATABASE_USER,
+    password: process.env.DATABASE_PASSWORD,
+    database: process.env.DATABASE,
 })
 
 server.use(cors());
