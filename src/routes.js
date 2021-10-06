@@ -17,7 +17,4 @@ routes.post('/user', UserController.store);
 
 routes.post('/bags/:bagId/cart', CartController.store);
 
-
-
-
 module.exports = routes;
