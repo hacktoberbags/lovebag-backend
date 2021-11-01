@@ -28,5 +28,5 @@ db.connect((error) => {
 });
 
 server.listen(port, () => {
-    console.log("🚀 ~ file: server.js ~ line 9 ~ server.listen ~ port", port);
+    console.log(`Server running on port ${PORT}`);
 })
