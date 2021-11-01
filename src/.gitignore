@@ -5,3 +5,8 @@ src/.env
 .env.development.local
 .env.test.local
 .env.production.local
+
+# Images
+*.png
+*.jpg
+*.jpeg
